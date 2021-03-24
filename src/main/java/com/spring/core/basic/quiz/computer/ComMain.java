@@ -1,5 +1,6 @@
 package com.spring.core.basic.quiz.computer;
 
+import com.spring.core.basic.config.QuizAutoConfig;
 import com.spring.core.basic.config.QuizConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -15,7 +16,7 @@ public class ComMain {
         3. computerInfo()메서드를 호출하여 정상작동하게 할 것
          */
 
-        ApplicationContext context = new AnnotationConfigApplicationContext(QuizConfig.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(QuizAutoConfig.class);
 
         Computer computer = context.getBean(Computer.class);
 
